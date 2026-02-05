@@ -73,7 +73,9 @@ body {
   var(--brand-dark) 100%
 );
   color: #ffffff;
-  padding: 70px 20px;
+
+  padding: 70px 20px 0;
+
 }
 
 .intro-container {
@@ -131,11 +133,8 @@ body {
 .intro-image img {
   width: 100%;
   display: block;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
 }
 
-/* HIGHLIGHTS */
 .highlights {
   background: var(--bg-soft);
   padding: 48px 20px;
@@ -410,4 +409,13 @@ body {
     width: 100%;
     justify-content: center;
   }
+}
+
+button.cta-main,
+button.cta-secondary,
+button.whatsapp-float{
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
 }

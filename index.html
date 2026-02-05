@@ -1,386 +1,374 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audit Contabilidade Audit Organizacoes Contabeis LTDA</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --primary-color: #1a3a5f;
-            --secondary-color: #d4af37;
-            --light-color: #f8f9fa;
-            --dark-color: #343a40;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark-color);
-        }
-        
-        .navbar-brand {
-            font-weight: bold;
-        }
-        
-        .hero-section {
-            background: linear-gradient(rgba(26, 58, 95, 0.8), rgba(26, 58, 95, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 120px 0;
-        }
-        
-        .section-title {
-            position: relative;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--secondary-color);
-        }
-        
-        .card {
-            border: none;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .icon-box {
-            width: 70px;
-            height: 70px;
-            background-color: var(--primary-color);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-        
-        .icon-box i {
-            font-size: 30px;
-            color: white;
-        }
-        
-        .contact-info {
-            background-color: var(--light-color);
-            padding: 20px;
-            border-radius: 5px;
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-        
-        .btn-primary:hover {
-            background-color: #0f2a47;
-            border-color: #0f2a47;
-        }
-        
-        .btn-outline-light:hover {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-            color: var(--dark-color);
-        }
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-balance-scale me-2"></i>
-                Audit Contabilidade Audit Organizacoes Contabeis LTDA
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#localizacao">Localização</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Hero Section -->
-    <section class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-4">Excelência Contábeis com Compromisso e Ética</h1>
-            <p class="lead mb-4">Atuamos com transparência e precisão para oferecer soluções contábeis que impulsionam o crescimento do seu negócio.</p>
-            <a href="#contato" class="btn btn-light btn-lg me-2">Entre em Contato</a>
-            <a href="#sobre" class="btn btn-outline-light btn-lg">Saiba Mais</a>
+    <title>Central de Atendimento Especializado | Análise Gratuita</title>
+
+    <meta
+      name="description"
+      content="Central de atendimento especializada em análise de situações financeiras e administrativas. Atendimento humano, rápido e seguro."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Central de Atendimento Especializado" />
+    <meta
+      property="og:description"
+      content="Faça uma análise gratuita e descubra soluções disponíveis para sua situação."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- TOPO -->
+    <header class="topbar">
+      <div class="topbar-container">
+        <div class="brand">
+          <i class="fa-solid fa-headset"></i>
+          <span>Central Audit Contabilidade</span>
         </div>
+      </div>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+    <main class="intro">
+      <div class="intro-container">
+        <div class="intro-text">
+          <span class="badge">Atendimento 2026</span>
+
+          <h1>
+            Descontos de até 98%.
+            <strong>Verifique as ofertas disponíveis para você e consulte seu CPF.</strong>
+          </h1>
+
+          <p>
+           Análise Especializada para Soluções Inteligentes, Consulte Agora Mesmo.
+          </p>
+
+          <button
+  type="button"
+  class="cta-main"
+  data-wa
+  data-wa-message="Olá, gostaria de consultar minhas ofertas disponíveis!"
+>
+  Solicitar Análise
+  <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+        </div>
+
+        <div class="intro-image">
+          <img src="womancelular.png" alt="Atendimento humano especializado" />
+        </div>
+      </div>
+    </main>
+
+    <!-- NÚMEROS -->
+    <section class="highlights">
+      <div class="highlights-container">
+        <div class="highlight">
+          <strong>+1.000.000</strong>
+          <span>Atendimentos realizados</span>
+        </div>
+
+        <div class="highlight">
+          <strong>+4 anos</strong>
+          <span>Experiência operacional</span>
+        </div>
+
+        <div class="highlight">
+          <strong>98%</strong>
+          <span>Avaliações positivas</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="section-title">Sobre o Escritório</h2>
-                    <p>A <strong>Audit Contabilidade Audit Organizacoes contábeis LTDA</strong> foi fundada em 10/05/2006 na cidade de Araranguá, SC, com o compromisso de oferecer serviços contábeis de excelência.</p>
-                    <p>Nossa missão é proporcionar assessoria de contabilidade completa, personalizada e eficiente, sempre pautada pela ética profissional e comprometimento com os interesses de nossos clientes.</p>
-                    <p>Com uma abordagem moderna de contabilidade, buscamos constantemente atualização e inovação para oferecer as melhores soluções contábeis.</p>
-                    
-                    <div class="mt-4">
-                        <h5>Informações da Empresa</h5>
-                        <ul class="list-unstyled">
-                            <li><strong>CNPJ:</strong> 07.994.633/0001-01</li>
-                            <li><strong>Data de Abertura:</strong> 10/05/2006</li>
-                            <li><strong>Natureza Jurídica:</strong> Atividades de contabilidade</li>
-                            <li><strong>Situação:</strong> Ativa</li>
-                            <li><strong>Capital Social:</strong> R$ 517.800,00</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80" alt="Escritório profissional" class="img-fluid rounded shadow" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\'%3E%3Crect fill=\'%23f0f0f0\' width=\'600\' height=\'400\'/%3E%3Ctext fill=\'%23999\' font-family=\'sans-serif\' font-size=\'18\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\'%3EEscritório%3C/text%3E%3C/svg%3E'">
-                </div>
-            </div>
+    <!-- DIFERENCIAIS -->
+    <section class="features">
+      <h2>Por que falar com nossa central?</h2>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Segurança Total</h3>
+          <p>Tratamos todas as informações com sigilo e responsabilidade.</p>
         </div>
+
+        <div class="feature-box">
+          <i class="fa-solid fa-user-check"></i>
+          <h3>Análise Humana</h3>
+          <p>Nada de robôs. Seu caso é avaliado por especialistas.</p>
+        </div>
+
+        <div class="feature-box">
+          <i class="fa-solid fa-clock"></i>
+          <h3>Resposta Rápida</h3>
+          <p>Retorno ágil e orientação clara desde o primeiro contato.</p>
+        </div>
+
+        <div class="feature-box">
+          <i class="fa-solid fa-comments"></i>
+          <h3>Acompanhamento</h3>
+          <p>Você não fica sozinho durante o processo.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Serviços -->
-    <section id="servicos" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title d-inline-block">Nossos Serviços</h2>
-                <p class="lead">Oferecemos uma ampla gama de serviços contabeis para atender suas necessidades</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center p-4">
-                        <div class="icon-box">
-                            <i class="bi bi-briefcase"></i>
-                        </div>
-                        <h4>Planejamento tributário</h4>
-                        <p>Assessoria de contabilidade para empresas, contratos societários, compliance e consultoria empresarial.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center p-4">
-                        <div class="icon-box">
-                            <i class="bi bi-house-door"></i>
-                        </div>
-                        <h4>Abertura de empresas</h4>
-                        <p>Cuidamos de todo o processo de abertura do seu negócio com rapidez e segurança.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center p-4">
-                        <div class="icon-box">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <h4>Contabilidade mensal</h4>
-                        <p>Gerenciamos impostos, obrigações e relatórios para manter sua empresa em dia.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center p-4">
-                        <div class="icon-box">
-                            <i class="bi bi-cash-coin"></i>
-                        </div>
-                        <h4>Declaração de Imposto de Renda</h4>
-                        <p>Preparamos e enviamos sua declaração com foco em economia e conformidade legal.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center p-4">
-                        <div class="icon-box">
-                            <i class="bi bi-heart-pulse"></i>
-                        </div>
-                        <h4>Consultoria contábil e fiscal</h4>
-                        <p>Orientação estratégica para reduzir custos e melhorar a saúde financeira da empresa.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center p-4">
-                        <div class="icon-box">
-                            <i class="bi bi-shield-check"></i>
-                        </div>
-                        <h4>Folha de pagamento</h4>
-                        <p>Cálculo de salários, encargos e gestão completa da folha de pagamento da empresa.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- ETAPAS -->
+    <section class="steps">
+      <h2>Como funciona o atendimento</h2>
+
+      <div class="steps-list">
+        <div class="step">
+          <span>01</span>
+          <p>Você entra em contato e explica sua situação</p>
         </div>
+
+        <div class="step">
+          <span>02</span>
+          <p>Nossa equipe analisa as informações</p>
+        </div>
+
+        <div class="step">
+          <span>03</span>
+          <p>Apresentamos as opções disponíveis</p>
+        </div>
+
+        <div class="step">
+          <span>04</span>
+          <p>Você decide como deseja prosseguir</p>
+        </div>
+      </div>
+<button
+  type="button"
+  class="cta-secondary"
+  data-wa
+  data-wa-message="Olá, gostaria de consultar minhas ofertas disponíveis!"
+>
+  Falar com um Atendente
+</button>
+
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title d-inline-block">Entre em Contato</h2>
-                <p class="lead">Estamos à disposição para esclarecer suas dúvidas e oferecer a melhor solução para seu caso</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="contact-info mb-4">
-                        <div class="row text-center">
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <i class="bi bi-envelope fs-1 text-primary mb-2"></i>
-                                <h5>E-mail</h5>
-                                <p>AUDITCON.LOGESERVLTDA@GMAIL.COM</p>
-                                <a href="mailto:AUDITCONTABILIDADE.LOGESERVLTDA@GMAIL.COM" class="btn btn-sm btn-primary">Enviar E-mail</a>
-                            </div>
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <i class="bi bi-telephone fs-1 text-primary mb-2"></i>
-                                <h5>Telefone</h5>
-                                <p>(48) 3524-2550</p>
-                                <a href="tel:8631421301" class="btn btn-sm btn-primary me-1">Ligar</a>
-                                <a href="https://wa.me/55483524-2550" class="btn btn-sm btn-success">WhatsApp</a>
-                            </div>
-                            <div class="col-md-4">
-                                <i class="bi bi-clock fs-1 text-primary mb-2"></i>
-                                <h5>Horário de Atendimento</h5>
-                                <p>Segunda a Sexta</p>
-                                <p>08:00 - 18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <form class="bg-light p-4 rounded">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome Completo</label>
-                            <input type="text" class="form-control" id="nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefone" class="form-label">Telefone</label>
-                            <input type="tel" class="form-control" id="telefone">
-                        </div>
-                        <div class="mb-3">
-                            <label for="assunto" class="form-label">Assunto</label>
-                            <select class="form-select" id="assunto">
-                                <option selected>Selecione o assunto</option>
-                                <option value="empresarial">Abertura de empresas</option>
-                                <option value="imobiliario">Contabilidade mensal</option>
-                                <option value="familia">Declaração de Imposto de Renda</option>
-                                <option value="tributario">Folha de pagamento</option>
-                                <option value="saude">Consultoria contábil e fiscal</option>
-                                <option value="consumidor">Regularização de empresas</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="footer-item">
+          <span>Audit Contabilidade Audit Organizacoes Contabeis LTDA</span>
         </div>
-    </section>
 
-    <!-- Localização -->
-    <section id="localizacao" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title d-inline-block">Nossa Localização</h2>
-                <p class="lead">Visite nosso escritório em Araranguá, SC</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h4 class="card-title">Endereço</h4>
-                            <p class="card-text">
-                                Rua Regimento Barriga Verde, 719<br>
-                                Centro<br>
-                                Araranguá, SC<br>
-                                CEP: 88900-061
-                            </p>
-                            
-                            <h5 class="mt-4">Para Correspondência</h5>
-                            <p>
-                                Audit Contabilidade Audit Organizacoes Contabeis LTDA<br>
-                                Rua Regimento Barriga Verde, 719<br>
-                                Centro<br>
-                                Araranguá, SC<br>
-                                CEP: 88900-061
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="card h-100">
-                        <div class="card-body p-0">
-                            <!-- Mapa do Google Maps incorporado -->
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.375389151843!2d-34.88827792468733!3d-8.06383798050722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1993e2d9a2a1%3A0x7b8418b414b9b0f9!2sAv.%20Rep%C3%BAblica%20do%20L%C3%ADbano%2C%20251%20-%20Pina%2C%20São Judas Tadeu%20-%20PE%2C%2051110-160!5e0!3m2!1spt-BR!2sbr!4v1692123456789!5m2!1spt-BR!2sbr" 
-                                width="100%" 
-                                height="300" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>contato@trenfdora.site</span>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy;  Audit Contabilidade Audit Organizacoes Contabeis LTDA. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">CNPJ: 07.994.633/0001-01</p>
-                </div>
-            </div>
+        <div class="footer-item">
+          <i class="fa-solid fa-id-card"></i>
+          <span>CNPJ: 07.994.633/0001-01</span>
         </div>
+
+        <div class="footer-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <div><p>Rua Regimento Barriga Verde 719 Sala 02</p></div>
+            <div><p>Centro, Araranguá - SC</p></div>
+            <div><p>88900-061</p></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">
+        © 2026 Central Gerencial. Todos os direitos reservados.
+      </p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- WHATSAPP FIXO -->
+   <button
+  type="button"
+  class="whatsapp-float"
+  data-wa
+  data-wa-message="Olá, gostaria de consultar minhas ofertas disponíveis!"
+  aria-label="Falar no WhatsApp"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</button>
+
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-box">
+        <p>
+          Utilizamos cookies para melhorar sua experiência e analisar o tráfego
+          do site. Ao continuar, você concorda com nossa
+          <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+        </p>
+        <div class="cookie-actions">
+          <button class="cookie-btn reject" onclick="rejectCookies()">
+            Recusar
+          </button>
+          <button class="cookie-btn accept" onclick="acceptCookies()">
+            Aceitar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cookieBanner = document.getElementById("cookieBanner");
+
+      function acceptCookies() {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.style.display = "none";
+      }
+
+      function rejectCookies() {
+        localStorage.setItem("cookiesAccepted", "false");
+        cookieBanner.style.display = "none";
+      }
+
+      window.onload = function () {
+        if (!localStorage.getItem("cookiesAccepted")) {
+          cookieBanner.style.display = "block";
+        }
+      };
+    </script>
+    <script >
+      (() => {
+  const API_BASE =
+    window.__ZAP_API_BASE || "https://troca-numeros-api-production.up.railway.app";
+
+  const DEFAULT_MESSAGE =
+    "Olá, gostaria de consultar minhas ofertas disponíveis!";
+
+  const SELECTOR = "[data-wa]";
+
+  const state = {
+    loading: true,
+    phone: "",
+    error: null,
+  };
+
+  function getDomain() {
+    return (window.location.hostname || "").replace(/^www\./, "");
+  }
+
+  function onlyDigits(v) {
+    return String(v || "").replace(/\D/g, "");
+  }
+
+  function buildWaUrl(phoneDigits, message) {
+    const phone = onlyDigits(phoneDigits);
+    const text = encodeURIComponent(message || DEFAULT_MESSAGE);
+    return `https://wa.me/${phone}?text=${text}`;
+  }
+
+  function getMessageFromEl(el) {
+    return el.getAttribute("data-wa-message") || DEFAULT_MESSAGE;
+  }
+
+  async function fetchPhoneByDomain(domain, signal) {
+    const url = `${API_BASE}/zap?domain=${encodeURIComponent(domain)}`;
+
+    const r = await fetch(url, {
+      method: "GET",
+      cache: "no-store",
+      signal,
+    });
+
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+
+    const data = await r.json();
+
+    const phone = onlyDigits(data?.phone);
+    const numero = onlyDigits(data?.numero);
+
+    const resolved = phone || numero;
+    if (!resolved) throw new Error("Número não retornado");
+
+    return resolved;
+  }
+
+  function setButtonsPending(pending) {
+    document.querySelectorAll(SELECTOR).forEach((el) => {
+      if (el instanceof HTMLButtonElement) {
+        el.disabled = pending;
+      }
+      el.classList.toggle("wa-pending", pending);
+      el.setAttribute("aria-busy", pending ? "true" : "false");
+    });
+  }
+
+  function setError(msg) {
+    state.error = msg;
+    document.querySelectorAll(SELECTOR).forEach((el) => {
+      el.classList.add("wa-error");
+    });
+  }
+
+  async function init() {
+    const domain = getDomain();
+
+    if (!API_BASE) {
+      state.loading = false;
+      setError("API_BASE não configurada.");
+      return;
+    }
+
+    if (!domain) {
+      state.loading = false;
+      setError("Domínio inválido. Rode em um servidor (não file://).");
+      return;
+    }
+
+    setButtonsPending(true);
+
+    const controller = new AbortController();
+
+    try {
+      const ph = await fetchPhoneByDomain(domain, controller.signal);
+      state.phone = ph;
+      state.error = null;
+    } catch {
+      state.phone = "";
+      setError("WhatsApp indisponível no momento. Tente novamente mais tarde.");
+    } finally {
+      state.loading = false;
+      setButtonsPending(false);
+    }
+  }
+
+  document.addEventListener("click", (ev) => {
+    const el = ev.target.closest?.(SELECTOR);
+    if (!el) return;
+
+    ev.preventDefault();
+
+    if (state.loading) {
+      alert("Carregando atendimento... tente novamente.");
+      return;
+    }
+
+    if (!state.phone) {
+      alert(state.error || "WhatsApp indisponível no momento.");
+      return;
+    }
+
+    const msg = getMessageFromEl(el);
+    const url = buildWaUrl(state.phone, msg);
+    window.open(url, "_blank", "noopener,noreferrer");
+  });
+
+  init();
+})();
+
+    </script>
+  </body>
 </html>
+>>>>>>> 650a992 (trocar tela)
